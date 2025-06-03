@@ -16,7 +16,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #c2d8b9;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -10971,23 +10971,3 @@ section.resume-section .resume-section-content {
   }
 }
 
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 120px;
-    height: 120px;
-    background: #eee;
-    color: #333;
-    font-size: 18px;
-    text-align: center;
-    line-height: 120px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.back-to-top:hover {
-    background: #333;
-    color: #eee;
-}
