@@ -10970,3 +10970,24 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    background: #eee;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+    background: #333;
+    color: #eee;
+}
