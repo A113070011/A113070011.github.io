@@ -1,0 +1,15 @@
+:root {
+  --bs-primary-rgb: 130, 51, 41;
+  --bs-link-color: #8a3033;
+  --bs-link-hover-color: #998888;
+} 
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+}
