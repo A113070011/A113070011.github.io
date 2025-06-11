@@ -9,7 +9,3 @@
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.education-item {
-  display: flex;
-  justify-content: space-between;
-}
