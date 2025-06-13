@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
 document.querySelectorAll('.audio-player').forEach(player => {
     const audio = player.querySelector('audio');
     const playBtn = player.querySelector('.play-pause');

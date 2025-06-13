@@ -356,55 +356,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 4 CSS -->
-
-</head>
-<body>
 
 <div id="starryCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#starryCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#starryCarousel" data-slide-to="1"></li>
     <li data-target="#starryCarousel" data-slide-to="2"></li>
+    <li data-target="#starryCarousel" data-slide-to="3"></li>
+    <li data-target="#starryCarousel" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
     
     <!-- 幻燈片 1 -->
     <div class="carousel-item active">
       <a href="https://paradoxlive.jp/animation/" target="_blank">
-        <img src="assets/img/u031278.webp" class="d-block w-100" alt="Slide 1">
+        <picture>
+          <source media="(max-width: 768px)" src="assets/img/para.jpg">
+          <img src="assets/img/u031278.webp" class="d-block w-100" alt="Slide 1">
+        </picture>
       </a>
     </div>
-
 
     <!-- 幻燈片 2 -->
     <div class="carousel-item">
       <a href="https://sh-anime.shochiku.co.jp/pjsekai-movie/" target="_blank">
-        <img src="assets/img/IMG_1362.jpg" class="d-block w-100" alt="Slide 2">
+        <picture>
+          <source media="(max-width: 768px)" src="assets/img/pro.jpg">
+          <img src="assets/img/IMG_1362.jpg" class="d-block w-100" alt="Slide 2">
+        </picture>
       </a>
     </div>
+
     <!-- 幻燈片 3 -->
     <div class="carousel-item">
       <a href="https://hypnosismic.com/" target="_blank">
-        <img src="assets/img/催麥.jpg" class="d-block w-100" alt="Slide 2">
+        <picture>
+          <source media="(max-width: 768px)" src="assets/img/ヒプノシスマイク.jpg">
+          <img src="assets/img/hypnosismic.jpg" class="d-block w-100" alt="Slide 3">
+        </picture>
       </a>
     </div>
+
     <!-- 幻燈片 4 -->
     <div class="carousel-item">
       <a href="https://www.ansatsu-anime.com/main.php" target="_blank">
-        <img src="assets/img/暗殺教室.jpg" class="d-block w-100" alt="Slide 2">
+        <picture>
+          <source media="(max-width: 768px)" src="assets/img/ansa.webp">
+          <img src="assets/img/暗殺教室.jpg" class="d-block w-100" alt="Slide 4">
+        </picture>
       </a>
     </div>
 
     <!-- 幻燈片 5 -->
     <div class="carousel-item">
       <a href="https://kimetsu.com/" target="_blank">
-        <img src="assets/img/鬼滅.jpg" class="d-block w-100" alt="Slide 3">
+        <picture>
+          <source media="(max-width: 768px)" src="assets/img/tanjiro.webp">
+          <img src="assets/img/鬼滅.jpg" class="d-block w-100" alt="Slide 5">
+        </picture>
       </a>
     </div>
 
   </div>
-  <!-- 左右控制箭頭 -->
+
   <a class="carousel-control-prev" href="#starryCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">上一張</span>
@@ -414,13 +428,6 @@
     <span class="sr-only">下一張</span>
   </a>
 </div>
-
-<!-- jQuery + Bootstrap 4 JS（順序不能錯） -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
 
                 </div>
                 </div>
