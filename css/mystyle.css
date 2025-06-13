@@ -204,7 +204,7 @@
 }
 @media (max-width: 768px) {
   .carousel-item img {
-    width: 100%;
+    width: 50%;
     height: 500px; /* 手機高度 */
   }
 }
