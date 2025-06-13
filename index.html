@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>A113070011 黃咨熏</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/bed.svg">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -47,7 +47,7 @@
                         世新大學臺北市文山區木柵路一段17巷1號 · 0905560326 ·
                         <a href="mailto:a113070011@mail.shu.edu.tw">a113070011@mail.shu.edu.tw</a>
                     </div>
-                    <p class="lead mb-5">2006年6月11日誕生在台南但後來搬回嘉義ㄉ辣個女人(歡迎祝我生日快樂嘻嘻)MBTI是ISTP-Tㄉ97%大I人，極少提供情緒價值但會給你很中(靠)肯(北)的建議或回應，很會瞎掰講幹話，歡迎來跟我聊天嘻嘻(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+                    <p class="lead mb-5">2006年6月11日誕生在台南但後來搬回嘉義ㄉ辣個女人(歡迎祝我生日快樂嘻嘻)MBTI是ISTP-Tㄉ97%大I人，極少提供情緒價值但會給你很中(靠)肯(北)的建議或回應，很會瞎掰講幹話，歡迎來跟我聊天(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
                     <p></p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.instagram.com/sunnie__023/?hl=zh-tw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -91,7 +91,7 @@
                             <h3 class="mb-0">原神</h3>
                             <div class="subheading mb-3">納塔</div>
                             <li>火神瑪薇卡坐騎維修師</li>
-                            <li>納塔龍眾飼養員(鏟屎官)</li>
+                            <li>納塔龍眾飼養員aka牙醫(拔牙ㄉ)</li>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Genshin</span></div>
                 </div>
@@ -180,7 +180,7 @@
                     <div class="service-card-back">
                         <h4 class="mb-3">關於</h4>
                         <ul class="feature-list">
-                            <li>遊戲id:7248561096955534082</li>
+                            <li>id:7248561096955534082</li>
                             <li>主推角是神代類、日野森志步、天馬司、星乃一歌</li>
                             <li>主推團是Wonderlands x Showtime、Leo/need</li>
                             <li>有參加過天馬司、星乃一歌聲優見面會</li>
@@ -210,7 +210,7 @@
                     <div class="service-card-back">
                         <h4 class="mb-3">關於</h4>
                         <ul class="feature-list">
-                            <li>剛玩不久先不放idㄌ</li>
+                            <li>剛玩不久先不放idㄌ(因為我不知道在哪)</li>
                             <li>主推角是逆先夏目、影片咪卡、Crazy:B的各位(還在探索中 朋友推什麼我就看什麼)</li>
                             <li>主推團是Crazy:B(還在探索中)</li>
                             <li>美男子們就是香香ㄉﾟ+｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡</li>
@@ -241,7 +241,7 @@
                             <li>遊戲id:875551722</li>
                             <li>主推角是火神、奶奶、基尼奇、歐洛倫、水龍、芙芙</li>
                             <li>愛納塔的一切</li>
-                            <li>原神啟動</li>
+                            <li>\!!!!原神啟動!!!!/</li>
                         </ul>
                         <a href="https://genshin.hoyoverse.com/zh-tw/home?utm_source=fab&utm_medium=home" target="_blank" class="btn btn-primary mt-4">Learn More</a>
                     </div>
@@ -348,57 +348,80 @@
   </div>
 </div>
 
-<script>
-  document.querySelectorAll('.audio-player').forEach(player => {
-    const audio = player.querySelector('audio');
-    const playBtn = player.querySelector('.play-pause');
-    const progressBar = player.querySelector('.progress');
-    const progressContainer = player.querySelector('.progress-bar');
-    const currentTimeEl = player.querySelector('.current-time');
-    const durationEl = player.querySelector('.duration');
-    const volumeSlider = player.querySelector('.volume-slider');
-    audio.volume = 0.3; 
-    volumeSlider.value = 0.3;
-
-
-    let isPlaying = false;
-
-    playBtn.addEventListener('click', () => {
-      if (isPlaying) {
-        audio.pause();
-        playBtn.innerHTML = '<i class="fas fa-play"></i>';
-      } else {
-        document.querySelectorAll('audio').forEach(a => a.pause()); // Stop others
-        audio.play();
-        playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-      }
-      isPlaying = !isPlaying;
-    });
-
-    audio.addEventListener('timeupdate', () => {
-      const progressPercent = (audio.currentTime / audio.duration) * 100;
-      progressBar.style.width = `${progressPercent}%`;
-
-      const format = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
-      currentTimeEl.textContent = format(audio.currentTime);
-      durationEl.textContent = format(audio.duration);
-    });
-
-    progressContainer.addEventListener('click', e => {
-      const percent = e.offsetX / progressContainer.offsetWidth;
-      audio.currentTime = percent * audio.duration;
-    });
-
-    volumeSlider.addEventListener('input', e => {
-      audio.volume = e.target.value;
-    });
-  });
-</script>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <br><div class="d-flex flex-column flex-md-row justify-content-between mb-5"></br>
                     <div class="flex-grow-1">
                         <h3 class="mb-0">看動漫</h3>
-                        <div class="subheading mb-3">鬼滅之刃、暗殺教室、進擊的巨人...</div>
+                        <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 CSS -->
+
+</head>
+<body>
+
+<div id="starryCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#starryCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#starryCarousel" data-slide-to="1"></li>
+    <li data-target="#starryCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    
+    <!-- 幻燈片 1 -->
+    <div class="carousel-item active">
+      <a href="https://paradoxlive.jp/animation/" target="_blank">
+        <img src="assets/img/u031278.webp" class="d-block w-100" alt="Slide 1">
+      </a>
+    </div>
+
+
+    <!-- 幻燈片 2 -->
+    <div class="carousel-item">
+      <a href="https://sh-anime.shochiku.co.jp/pjsekai-movie/" target="_blank">
+        <img src="assets/img/IMG_1362.jpg" class="d-block w-100" alt="Slide 2">
+      </a>
+    </div>
+    <!-- 幻燈片 3 -->
+    <div class="carousel-item">
+      <a href="https://hypnosismic.com/" target="_blank">
+        <img src="assets/img/催麥.jpg" class="d-block w-100" alt="Slide 2">
+      </a>
+    </div>
+    <!-- 幻燈片 4 -->
+    <div class="carousel-item">
+      <a href="https://www.ansatsu-anime.com/main.php" target="_blank">
+        <img src="assets/img/暗殺教室.jpg" class="d-block w-100" alt="Slide 2">
+      </a>
+    </div>
+
+    <!-- 幻燈片 5 -->
+    <div class="carousel-item">
+      <a href="https://kimetsu.com/" target="_blank">
+        <img src="assets/img/鬼滅.jpg" class="d-block w-100" alt="Slide 3">
+      </a>
+    </div>
+
+  </div>
+  <!-- 左右控制箭頭 -->
+  <a class="carousel-control-prev" href="#starryCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">上一張</span>
+  </a>
+  <a class="carousel-control-next" href="#starryCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">下一張</span>
+  </a>
+</div>
+
+<!-- jQuery + Bootstrap 4 JS（順序不能錯） -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
                 </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
