@@ -198,12 +198,13 @@
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 80%;
   height: 500px; /* 電腦高度 */
   object-fit: cover;
 }
 @media (max-width: 768px) {
   .carousel-item img {
+    width: 80%;
     height: 300px; /* 手機高度 */
   }
 }
